@@ -11,26 +11,21 @@ jobs:
         include:
           - php-version: 8.1
             validate: 'validate'
-          - php-version: 8.1
             database: pgsql
             test: 'test'
             SAVE_BUILD: 'save_build'
           - php-version: 8.1
+            validate: 'validate'
             database: mariadb
             test: 'test'
             SAVE_BUILD: 'save_build'
           - php-version: 8.1
+            validate: 'validate'
             database: mysql
             test: 'test'
             SAVE_BUILD: 'save_build'
             upgrade: 'upgrade'
             upgrade_test: 'stable-3_3_0,stable-3_4_0'
-          - php-version: 8.2
-            database: mysql
-            test: 'test'
-          - php-version: 8.2
-            database: pgsql
-            test: 'test'
 
     name: ojs
     steps:
@@ -48,26 +43,22 @@ jobs:
         include:
           - php-version: 8.1
             validate: 'validate'
-          - php-version: 8.1
             database: pgsql
             test: 'test'
             SAVE_BUILD: 'save_build'
           - php-version: 8.1
+            validate: 'validate'
             database: mariadb
             test: 'test'
             SAVE_BUILD: 'save_build'
           - php-version: 8.1
+            validate: 'validate'
             database: mysql
             test: 'test'
             SAVE_BUILD: 'save_build'
             upgrade: 'upgrade'
             upgrade_test: '3.1.0,3.1.1-2,3.1.2,stable-3_2_0,stable-3_2_1,stable-3_3_0'
-          - php-version: 8.2
-            database: mysql
-            test: 'test'
-          - php-version: 8.2
-            database: pgsql
-            test: 'test'
+
 
     name: ojs-stable-3_4_0
     steps:
