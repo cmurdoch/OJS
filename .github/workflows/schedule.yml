@@ -1,17 +1,10 @@
 on:
   schedule:
-<<<<<<< Updated upstream
-    - cron: '5 5  * * *'
-name: schedule
-jobs:
-  ojs-main:
-=======
     - cron: '*/5 * * * *'
 name: schedule
 jobs:
   ojs-main:
-    if: github.event.pull_request.head.repo.full_name == 'withanage/ojs'
->>>>>>> Stashed changes
+    if: github.repository == 'withanage/ojs'
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -55,10 +48,6 @@ jobs:
             test: 'test'
             SAVE_BUILD: 'save_build'
           - php-version: 8.1
-<<<<<<< Updated upstream
-            validate: 'validate'
-=======
->>>>>>> Stashed changes
             database: mariadb
             test: 'test'
             SAVE_BUILD: 'save_build'
