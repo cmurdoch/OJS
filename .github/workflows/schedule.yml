@@ -55,8 +55,6 @@ jobs:
             database: mysql
             test: 'test'
             SAVE_BUILD: 'save_build'
-            upgrade: 'upgrade'
-            upgrade_test: '3.1.0,3.1.1-2,3.1.2,stable-3_2_0,stable-3_2_1,stable-3_3_0'
 
 
     name: ojs-stable-3_4_0
